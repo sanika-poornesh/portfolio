@@ -8,6 +8,7 @@ font-family:Arial, Helvetica, sans-serif;
 body{
 background:#0f172a;
 color:#e2e8f0;
+line-height:1.6;
 }
 
 /* NAVBAR */
@@ -35,8 +36,8 @@ color:#38bdf8;
 
 nav ul{
 display:flex;
-list-style:none;
 gap:25px;
+list-style:none;
 }
 
 nav a{
@@ -44,12 +45,7 @@ text-decoration:none;
 color:#e2e8f0;
 }
 
-nav a:hover{
-color:#38bdf8;
-}
-
-
-/* HERO CARD */
+/* HERO */
 
 .hero{
 display:flex;
@@ -61,11 +57,12 @@ padding:60px 20px;
 display:flex;
 align-items:center;
 gap:40px;
-background:linear-gradient(135deg,##1f1f4e,#174c89);
-padding:30px 50px;
+background:linear-gradient(135deg,#051851,#020547);
+padding:30px 40px;
 border-radius:16px;
 max-width:900px;
 width:100%;
+flex-wrap:wrap;
 }
 
 .profile-img{
@@ -77,13 +74,11 @@ object-fit:cover;
 }
 
 .hero-right h1{
-font-size:32px;
-margin-bottom:5px;
+font-size:30px;
 }
 
 .role{
 margin-bottom:10px;
-opacity:0.9;
 }
 
 .hero-buttons{
@@ -105,8 +100,7 @@ background:#16a34a !important;
 color:white !important;
 }
 
-
-/* SECTIONS */
+/* SECTION */
 
 .section{
 width:90%;
@@ -120,7 +114,6 @@ margin-bottom:20px;
 color:#38bdf8;
 }
 
-
 /* GRID */
 
 .grid{
@@ -128,7 +121,6 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
-
 
 /* CARD */
 
@@ -143,7 +135,6 @@ color:#94a3b8;
 margin-bottom:10px;
 }
 
-
 /* FOOTER */
 
 footer{
@@ -151,4 +142,26 @@ text-align:center;
 padding:20px;
 background:#020617;
 margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-flex{
+flex-direction:column;
+gap:10px;
+}
+
+.hero-card{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-buttons a{
+display:block;
+margin:10px auto;
+width:160px;
+}
+
 }
