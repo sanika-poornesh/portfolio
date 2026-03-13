@@ -1,1 +1,1 @@
-console.log("Portfolio Loaded");
+console.log("Sanika JP Portfolio Loaded 🚀");
